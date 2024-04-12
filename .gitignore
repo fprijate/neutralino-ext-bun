@@ -6,6 +6,9 @@
 /bin
 /dist
 
+# Test
+/TEST
+
 # Neutralinojs client (minified)
 neutralino.js
 
@@ -18,3 +21,4 @@ neutralino.js
 /build-win.sh
 /extensions/bun/_runtime/bin/bun
 /extensions/bun/_runtime/bin/bun.exe
+/

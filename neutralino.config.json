@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/neutralinojs/neutralinojs/main/schemas/neutralino.config.schema.json",
   "applicationId": "com.marketmix.extBun",
   "version": "1.0.0",
-  "defaultMode": "browser",
+  "defaultMode": "window",
   "port": 0,
   "documentRoot": "/resources/",
   "url": "/",
@@ -14,6 +14,7 @@
   "logging": {
     "enabled": true,
     "writeToLogFile": true
+
   },
   "globalVariables": {},
   "modes": {
@@ -65,8 +66,9 @@
       "id": "extBun",
       "commandDarwin": "${NL_PATH}/extensions/bun/run ${NL_PATH}",
       "commandLinux": "${NL_PATH}/extensions/bun/run ${NL_PATH}",
-      "commandWindowsOld": "${NL_PATH}\\extensions\\bun\\run.cmd ${NL_PATH}",
-      "commandWindows": "bun run --inspect ${NL_PATH}\\extensions\\bun\\main.js "
+      "commandWindows": "${NL_PATH}\\extensions\\bun\\run.cmd ${NL_PATH}",
+      "commandWindows1": "bun run --inspect ${NL_PATH}\\extensions\\bun\\main.js ",
+      "commandWindows2": "bun run --inspect ${NL_PATH}\\extensions\\bun\\main.js" 
     }
   ],
   "buildScript": {
